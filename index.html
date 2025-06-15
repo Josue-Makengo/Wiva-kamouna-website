@@ -4,19 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Découvrez Wiva Kamouna, un vin artisanal local initié par Justin Mola Bosenge. Commandez directement via WhatsApp !" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Wiva Kamouna</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
   <header class="header">
-    <nav class="navbar">
-      <div class="navbar__logo">Wiva Kamouna</div>
-      <ul class="navbar__menu">
-        <li class="navbar__item"><a href="#accueil" class="navbar__link">Accueil</a></li>
-        <li class="navbar__item"><a href="#historique" class="navbar__link">Historique</a></li>
-        <li class="navbar__item"><a href="#commande" class="navbar__link">Commander</a></li>
-      </ul>
-    </nav>
+     <nav class="navbar">
+    <div class="navbar__logo">Wiva Kamouna</div>
+    <div class="navbar__toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="#" class="navbar__link">Accueil</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Historique</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Commander</a></li>
+    </ul>
+  </nav>
   </header>
 
   <main>
@@ -67,8 +71,8 @@
       </div>
 
       <div class="historique__bloc historique__bloc--reverse">
-        <p class="historique__text">Inspiré par les traditions artisanales de notre région, Justin a conçu un vin qui respecte les savoir-faire tout en apportant une touche de modernité et de qualité.</p>
         <img src="photos/img-vin-02.jpg" alt="Vin artisanal" class="historique__img" />
+        <p class="historique__text historique__text--reverse">Inspiré par les traditions artisanales de notre région, Justin a conçu un vin qui respecte les savoir-faire tout en apportant une touche de modernité et de qualité.</p>
       </div>
 
       <div class="historique__bloc">
@@ -103,8 +107,20 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__text">Adresse : Mambila n°45, Q/Mikondo, C/Kimbanseke</p>
-  </footer>
+  <div class="footer__adresse">
+    <p><i class="fas fa-map-marker-alt"></i> 18, Kulutu, Q/Mikondo, C/Kimbanseke</p>
+    <p><i class="fas fa-phone"></i> 089266837366</p>
+  </div>
+  <div class="footer__social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <div class="footer__copy">
+    <p>&copy; Josué Makengo - Tous droits réservés</p>
+  </div>
+</footer>
 
   <script src="js/main.js"></script>
 </body>

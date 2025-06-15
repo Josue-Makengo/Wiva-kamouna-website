@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez Wiva Kamouna, un vin artisanal local initié par Justin Mola Bosenge. Commandez directement via WhatsApp !" />
+  <title>Wiva Kamouna</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar__logo">Wiva Kamouna</div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#accueil" class="navbar__link">Accueil</a></li>
+        <li class="navbar__item"><a href="#historique" class="navbar__link">Historique</a></li>
+        <li class="navbar__item"><a href="#commande" class="navbar__link">Commander</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Accueil -->
+    <section id="accueil" class="hero">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title"><span>Wi</span>va Kamouna <br> un <span>vin</span> artisanal de <span>chez</span> nous</h1>
+          <p class="hero__description">Découvrez le goût unique du vin Wiva Kamouna, fait avec passion et authenticité.</p>
+          <a href="#formats" class="hero__btn">Voir nos formats</a>
+        </div>
+        <div class="hero__image">
+          <img src="photos/vino.jpg"
+           alt="Bouteille de vin Wiva Kamouna" class="image__hero"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formats -->
+    <section id="formats" class="formats">
+      <h2 class="formats__title">Nos Formats</h2>
+      <div class="formats__grid">
+        <div class="formats__card">
+          <img src="photos/vin-008.jpg" alt="Bouteille 33cl" class="formats__img" />
+          <h3 class="formats__name">Format 33cl</h3>
+          <p class="formats__desc">Un petit format idéal pour les découvertes et les moments solo.</p>
+        </div>
+        <div class="formats__card">
+          <img src="photos/vin-008.jpg" alt="Bouteille 50cl" class="formats__img" />
+          <h3 class="formats__name">Format 50cl</h3>
+          <p class="formats__desc">Parfait pour partager un moment convivial à deux.</p>
+        </div>
+        <div class="formats__card">
+          <img src="photos/vin-008.jpg" alt="Bouteille 1L" class="formats__img" />
+          <h3 class="formats__name">Format 1L</h3>
+          <p class="formats__desc">Le format généreux pour les grandes occasions et les familles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historique -->
+    <section id="historique" class="historique">
+      <h2 class="historique__title">Notre Histoire</h2>
+
+      <div class="historique__bloc">
+        <img src="photos/img-vin-01.jpg" alt="Justin Mola Bosenge" class="historique__img" />
+        <p class="historique__text">Wiva Kamouna est une initiative portée par Justin Mola Bosenge, un jeune entrepreneur déterminé à valoriser les produits locaux et à offrir une alternative authentique à la consommation du vin.</p>
+      </div>
+
+      <div class="historique__bloc historique__bloc--reverse">
+        <p class="historique__text">Inspiré par les traditions artisanales de notre région, Justin a conçu un vin qui respecte les savoir-faire tout en apportant une touche de modernité et de qualité.</p>
+        <img src="photos/img-vin-02.jpg" alt="Vin artisanal" class="historique__img" />
+      </div>
+
+      <div class="historique__bloc">
+        <img src="photos/img-vin-07.jpg" alt="Partage autour d'un verre" class="historique__img" />
+        <p class="historique__text">Wiva Kamouna n’est pas seulement un vin, c’est un symbole culturel, une fierté locale, un moment de partage et de convivialité.</p>
+      </div>
+    </section>
+
+    <!-- Commande -->
+    <section id="commande" class="commande">
+      <h2 class="commande__title">Commander votre bouteille</h2>
+      <p class="commande__desc">Commandez facilement votre bouteille de vin Wiva Kamouna en contactant directement Justin Mola Bosenge via WhatsApp. Nous vous garantissons un service rapide, chaleureux et personnalisé pour répondre à vos besoins et vous accompagner dans vos événements.</p>
+      <button class="commande__btn" id="openPopup">Commander sur WhatsApp</button>
+    </section>
+
+    <!-- Popup WhatsApp -->
+    <div class="popup" id="popup" aria-hidden="true">
+      <div class="popup__content" role="dialog" aria-modal="true">
+        <p class="popup__message">Vous allez être redirigé vers le compte WhatsApp de Justin Mola Bosenge pour passer votre commande. Prêt ?</p>
+        <a href="https://wa.me/243000000000?text=Bonjour%2C%20je%20souhaite%20commander%20du%20vin%20Wiva%20Kamouna.%20Merci%20de%20me%20donner%20plus%20d'informations." class="popup__btn" target="_blank">Allez-y</a>
+        <button class="popup__close" id="closePopup">Fermer</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Adresse : Mambila n°45, Q/Mikondo, C/Kimbanseke</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

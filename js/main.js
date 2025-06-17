@@ -1,5 +1,14 @@
-// popup.js
+// nav
+const navLinks = document.querySelectorAll('.navbar__link');
+  const checkbox = document.getElementById('click');
 
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false;
+    });
+  });
+
+// popup.js
 document.addEventListener("DOMContentLoaded", function () {
     const openPopupBtn = document.getElementById("openPopup");
     const popup = document.getElementById("popup");

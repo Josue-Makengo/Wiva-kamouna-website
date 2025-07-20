@@ -13,6 +13,7 @@ body {
   color: #333;
   background: linear-gradient(180deg, #000000,#120101,#230000,#0b0404);
   color: whitesmoke;
+  padding-top: 75px;
 }
   
 img {
@@ -27,8 +28,12 @@ a {
   
   /* HEADER */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #6b1e1e;
   padding: 1rem 2rem;
+  z-index: 20;
 }
   
 .navbar {
@@ -235,7 +240,7 @@ span{
   
   /* COMMANDE */
 .commande {
-  background-image: url(../photos/commande.jpg);
+  background-image: url(../photos/commande.webp);
   padding: 3rem 2rem;
   text-align: center;
 }
@@ -363,6 +368,27 @@ span{
 .footer__social a:hover {
   opacity: 0.8;
 }
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #6b1e1e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 999;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #dc0505;
+}
+
 
 
   /*  Responsive design  */

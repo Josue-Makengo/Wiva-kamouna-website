@@ -369,25 +369,47 @@ span{
   opacity: 0.8;
 }
 
-#scrollToTopBtn {
+.scroll-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
+  bottom: 20px;
+  right: 20px;
   background-color: #6b1e1e;
   color: white;
-  border: none;
-  padding: 0.8rem 1rem;
+  border:none;
   border-radius: 10%;
-  font-size: 1.2rem;
+  padding: 0.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 999;
-  transition: opacity 0.3s;
+}
+.scroll-to-top:hover{
+  background: transparent;
+  border: 2px solid red;
 }
 
-#scrollToTopBtn:hover {
-  background-color: #dc0505;
+.scroll-to-top i {
+  font-size: 1.5rem; 
 }
+
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Animation  du bouton flottant*/
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
 
 
 

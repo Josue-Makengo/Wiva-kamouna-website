@@ -42,18 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // bouton flotante
 
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const scrollBtn = document.querySelector('.scroll-to-top');
 
-window.onscroll = () => {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollToTopBtn.style.display = "block";
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add('show');
   } else {
-    scrollToTopBtn.style.display = "none";
+    scrollBtn.classList.remove('show');
   }
-};
+});
 
-scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 
